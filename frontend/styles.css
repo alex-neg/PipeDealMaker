@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.form-container {
+  width: 800px;
+  margin: 50px auto;
+}
+
+.form-container h4 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group1,
+.form-group2 {
+  display: flex;
+}
+
+form {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create {
+  background-color: #4caf50;
+  color: white;
+}
+
+.save {
+  background-color: #cccccc;
+  margin-left: 10px;
+}
