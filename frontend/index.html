@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pipedrive Deal Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h4>NEW Create a job</h4>
+      <div class="form-section">
+        <div class="form-group1">
+          <form class="clientDetails">
+            <h3>Client Details</h3>
+            <label for="firstName"></label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+            />
+            <label for="lastName"></label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+            />
+            <label for="phone"></label>
+            <input type="tel" id="phone" name="phon" placeholder="Phone" />
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email (optional)"
+            />
+          </form>
+          <form class="jobDetails">
+            <h3>Job Details</h3>
+            <label for="jobType"></label>
+            <select name="jobType" id="jobType">
+              <option value="" disabled selected>Job type</option>
+              <option value="Full time">Lorem</option>
+              <option value="Part time">Lorem ipsum</option>
+              <option value="Contract">Lorem ipsum dolor</option>
+            </select>
+            <label for="jobSource"></label>
+            <select name="jobSource" id="jobSource">
+              <option value="" disabled selected>Job Source</option>
+              <option value="Company Website">Lorem ipsum dolor</option>
+              <option value="Job Board">Lorem ipsum</option>
+              <option value="Other">Lorem</option>
+            </select>
+            <label for="jobDescription"></label>
+            <textarea
+              name="jobDescription"
+              id="jobDescription"
+              rows="3"
+              cols="40"
+              placeholder="Description (optional)"
+            ></textarea>
+          </form>
+        </div>
+        <div class="form-group2">
+          <form class="serviceLocation">
+            <h3>Service Location</h3>
+            <label for="address"></label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Address"
+              required
+            />
+            <label for="city"></label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="City"
+              required
+            />
+            <label for="state"></label>
+            <input
+              type="text"
+              name="state"
+              id="state"
+              placeholder="State"
+              required
+            />
+            <label for="zipCode"></label>
+            <input
+              type="text"
+              id="zipCode"
+              name="zipCode"
+              placeholder="Zip Code"
+            />
+            <label for="region"></label>
+            <select name="region" id="region">
+              <option value="" disabled selected>Region</option>
+              <option value="Region 1">Region 1</option>
+              <option value="Region 2">Region 2</option>
+            </select>
+          </form>
+          <form class="scheduled">
+            <h3>Scheduled</h3>
+            <label for="startDate"></label>
+            <input
+              type="date"
+              id="startDate"
+              name="startDate"
+              placeholder="Start Date"
+            />
+            <label for="startTime"></label>
+            <input
+              type="time"
+              id="startTime"
+              name="startTime"
+              placeholder="Start Time"
+            />
+            <label for="endTime"></label>
+            <input
+              type="time"
+              id="endTime"
+              name="endTime"
+              placeholder="End Time"
+            />
+            <label for="testSelect"></label>
+            <select name="testSelect" id="testSelect">
+              <option value="" disabled selected>Test Select</option>
+              <option value="Test 1">Test 1</option>
+              <option value="Test 2">Test 2</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button type="submit" class="create">Create Request</button>
+      <button type="button" class="save">Save Info</button>
+    </div>
+  </body>
+</html>
