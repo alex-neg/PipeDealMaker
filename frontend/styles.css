@@ -19,7 +19,10 @@ body {
   display: flex;
 }
 
-form {
+.form1,
+.form2,
+.form3,
+.form4 {
   border: 1px solid #ddd;
   border-radius: 5px;
   flex: 1;
