@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         body: JSON.stringify(data),
       });
+      console.log("Response:", response);
 
       const result = await response.json();
     } catch (error) {
