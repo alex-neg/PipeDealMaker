@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     try {
-      const response = await fetch("https://localhost:3000/api/create-deal", {
+      const response = await fetch("http://localhost:3000/api/create-deal", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
