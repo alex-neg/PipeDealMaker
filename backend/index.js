@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 
 // Middleware to parse JSON
 app.use(bodyParser.json());
-app.use(cors())
+app.use(cors());
 
 // Pipedrive API token, domain, URL
 const apiToken = process.env.PIPEDRIVE_API_TOKEN;
@@ -24,7 +24,6 @@ console.log(companyDomain);
 const pipedriveURL = `https://${companyDomain}.pipedrive.com/api/v1/deals?api_token=${apiToken}`;
 
 // API endpoint to create a new job in Pipedrive
-
 app.post("/api/create-deal", async (req, res) => {
   try {
     const {
@@ -45,6 +44,7 @@ app.post("/api/create-deal", async (req, res) => {
       endTime,
       testSelect,
     } = req.body;
+
     const dealData = {
       title: `${firstName}, ${lastName}`,
       "6d26bb0ff87689e5cb78b2cac3fdcdcfc55ed35b": firstName,
@@ -91,6 +91,6 @@ app.post("/api/create-deal", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}...`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running on ${PORT}...`);
+// });
