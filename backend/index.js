@@ -89,8 +89,6 @@ app.post("/api/create-deal", async (req, res) => {
   }
 });
 
-// app.listen(PORT, () => {
-//   console.log(`Server running on ${PORT}...`);
-// });
-
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}...`);
+});
