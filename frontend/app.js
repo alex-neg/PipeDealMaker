@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const jobForm = document.getElementById("jobForm");
+  const createButton = document.querySelector(".create");
 
   jobForm.addEventListener("submit", async function (e) {
     e.preventDefault();
+
+    createButton.style.backgroundColor = "#D2122E";
+    createButton.textContent = "Request Sent";
 
     const formData = new FormData(this);
     const data = {};
