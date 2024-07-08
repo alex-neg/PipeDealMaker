@@ -6,4 +6,11 @@ PipeDealMaker is a project that allows users to create new jobs (deals) in Piped
 
 - Custom form to collect job details from users.
 - Back-end API to create new deals in Pipedrive.
-- Deployed front-end accessible from anywhere.
+- Deployed front-end and backend accessible from anywhere.
+
+## TAchnologies Used
+
+- Front-end: HTML, CSS, JavaScript
+- Back-end: Node.js, Express.js
+- APIs: Pipedrive API
+- Deployment: Netlify (Front-end), Render (Back-end)
