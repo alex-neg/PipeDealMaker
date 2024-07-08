@@ -10,8 +10,6 @@ dotenv.config({ path: "./config.env" });
 // Init express app
 const app = express();
 
-const PORT = process.env.PORT;
-
 // Middleware to parse JSON
 app.use(bodyParser.json());
 app.use(cors());
@@ -94,3 +92,5 @@ app.post("/api/create-deal", async (req, res) => {
 // app.listen(PORT, () => {
 //   console.log(`Server running on ${PORT}...`);
 // });
+
+module.exports = app;
