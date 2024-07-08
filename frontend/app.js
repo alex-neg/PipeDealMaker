@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://pipedealmaker.onrender.com//api/create-deal",
+        "https://pipedealmaker.onrender.com/api/create-deal",
         {
           method: "POST",
           headers: {
